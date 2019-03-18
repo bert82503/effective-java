@@ -7,11 +7,9 @@ import java.util.concurrent.ThreadLocalRandom;
  * Random number generation is hard! - Page 215
  * 随机数生成。
  *
- * @author dannong.lihg
  * @see java.util.concurrent.ThreadLocalRandom
  */
 public class RandomExample {
-
     public static int nextInt(int bound) {
         return ThreadLocalRandom.current().nextInt(bound);
     }
@@ -30,15 +28,16 @@ public class RandomExample {
         return rnd.nextInt(bound);
     }
 
+    private static final int ONE_MILLION = 1_000_000;
+
     public static void main(String[] args) {
         int bound = 2 * (Integer.MAX_VALUE / 3);
         int low = 0;
-        for (int i = 0; i < 1_000_000; i++) {
+        for (int i = 0; i < ONE_MILLION; i++) {
             if (random(bound) < bound/2) {
                 low++;
             }
         }
         System.out.println(low);
     }
-
 }

@@ -8,7 +8,7 @@ Effective Java
 
 
 ### Effective Java, Third Edition
-Updated for **Java 9**, **<font color="red">Best practices</font>** for \<Item\> ... the **Java Platform**
+Updated for **Java 9**, <font color="red">**Best practices**</font> for \<Item\> ... the **Java Platform**
 
 ![EJ3e Book Cover](https://www.pearsonhighered.com/assets/bigcovers/0/1/3/4/0134685997.jpg)
 
