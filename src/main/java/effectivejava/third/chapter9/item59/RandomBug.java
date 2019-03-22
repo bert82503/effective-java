@@ -5,11 +5,11 @@ import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * Random number generation is hard! - Page 215
- * 随机数生成。
+ * 随机数生成很难！
  *
- * @see java.util.concurrent.ThreadLocalRandom
+ * @see ThreadLocalRandom#current()#nextInt(int)
  */
-public class RandomExample {
+public class RandomBug {
     public static int nextInt(int bound) {
         return ThreadLocalRandom.current().nextInt(bound);
     }

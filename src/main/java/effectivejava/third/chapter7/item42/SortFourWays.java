@@ -8,6 +8,9 @@ import java.util.List;
 /**
  * Sorting with function objects (Pages 193-4)
  * 使用函数对象排序
+ *
+ * @see List#sort(Comparator)
+ * @see Comparator#comparingInt(java.util.function.ToIntFunction)
  */
 public class SortFourWays {
     public static void main(String[] args) {
